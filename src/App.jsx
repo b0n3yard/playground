@@ -6,6 +6,7 @@ import { Routes, Route } from 'react-router-dom'
 import Landing from "./pages/landing.jsx"
 import Dungeon from './pages/dungeon.jsx'
 import PromptGenerator from './pages/promptGenerator.jsx'
+import TtsGenerator from './pages/ttsGenerator.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
         <Route path ="/" element={<Landing/>}/>
         <Route path="dungeon" element={<Dungeon/>}/>
         <Route path= "/promptGenerator" element={<PromptGenerator/>}/>
+        <Route path="/ttsGenerator" element={<TtsGenerator/>}/>
       </Routes>
     </>
   )
