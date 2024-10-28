@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Quote from "../components/quote"
 
 function PromptGenerator(){
     const[prompts, setPrompts] = useState()
@@ -57,6 +58,7 @@ Michael Klein
 
     return(
         <>
+        <h1><Quote slug = "courage"></Quote></h1>
         <form action="" onSubmit={handleSubmit}>
             <textarea name="job_title" id="" placeholder="job_title"></textarea>
             <textarea name="company_name" id="" placeholder="company_name"></textarea>
